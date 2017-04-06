@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tercera aplicacion</title>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app1.min.css"
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="../js/acciones.js"></script>
+<script src="../phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/person.jpg','imagenes/sequia.jpg','imagenes/animal.jpg','imagenes/sue.jpg','imagenes/redu.jpg')">
+
+ <div data-role="page" id="Principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Contaminacion del Planeta</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Contaminacion</h1>
+    <div>
+     <p>Contaminacion en el planeta</p>
+     <br>
+ </div>
+ <div>
+   <img src="imagenes/descarga.jpg" width="50%" height="50%">
+ </div>
+</div>
+</div>
+<div>
+  <ul data-role="listview" data-theme="b" class="ui-listview" ui-group-theme-b">
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>DEFINICION</h2>
+     <p>Que es la contaminacion</p>
+    </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>TIPOS DE CONTAMINACION</h2>
+      <p>Cuantos tipos de contaminacion hay</p>
+    </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>CONSECUENCIAS DE LA CONTAMINACION</h2>
+    <p>Calentamiento global</p>
+   </a>
+ </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>REGLA DE LAS TRES ERRES(3-R) </h2>
+   <p>Reducir, Reutilizar, Reciclar.</p>
+  </a>
+ </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>MEDIDAS PREVENTIVAS</h2>
+   <p>Prevenir la contaminacion</p>
+  </a>
+ </li>
+ <li class=ui-first-child ui-last-child">
+  <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>CONTAMINACION EN MI ENTORNO</h2>
+   <p>Contaminacion cerca de mi casa</p>
+   </a>
+  </li>
+  </ul>
+ </div>
+ 
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+   <div>
+    <img src="imagenes/logo.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Aplicacion tres</h4>
+     <h4>Rosa Patricia Aguilar Sandoval</h4>
+    </div>
+   </div>
+   </div>
+    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>¿QUE ES LA CONTAMINACION?</h1>
+     </div>
+   <div  data-role="centent" align="center">
+     <div>
+     <img src="imagenes/arbol.jpg" width="500" height="500">
+<h2>La contaminación se produce cuando los residuos contaminan el entorno natural; trayendo como consecuencias cambios que afectan a nuestro estilo de vida normal, de manera perjudicial. 
+ Los residuos son los elementos principales de la contaminación, altera nuestro ecosistema y el equilibrio del medio ambiente. "Con la modernización y el desarrollo en nuestras vidas, 
+ la contaminación ha alcanzado su pico; dando lugar al calentamiento climático y al origen de enfermedades humanas."</h2></div>
+     </div>
+    <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion tres, RPAS</h4>
+    </div>
+     </div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>TIPOS DE CONTAMINACION</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Contaminación 1</h1>
+   <h1>CONTAMINACIÓN DEL AGUA</h1>
+   <img src="imagenes/agua.jpg">
+   <p>Es la incorporación al agua de materias extrañas, como microorganismos, productos químicos, residuos industriales, y de
+   otros tipos o aguas residuales.Estas materias deterioran la calidad del agua y la hacen inútil para los usos pretendidos.</p>
+   </div>
+   <div data-role="collapsible" data-content-theme="false">
+   <h1> Contaminación 2</h1>
+   <h1>CONTAMINACIÓN DEL SUELO</h1>
+   <img src="imagenes/suelo.jpg">
+   <p>es la incorporación al suelo de materias extrañas, como basura, desechos tóxicos, productos químicos, y desechos
+   industriales. La contaminación del suelo produce un desequilibrio físico, químico y biológico que afecta negativamente las plantas, animales y humanos.</p>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+   <h1> Contaminación 3</h1>
+   <h1>CONTAMINACIÓN DEL AIRE</h1>
+   <img src="imagenes/aire.jpg">
+   <p>es la adición dañina a la atmósfera de gases tóxicos, CO, u otros que afectan el normal desarrollo de plantas, animales y que afectan negativamente la salud de los humanos</p>
+   </div>
+   <div data-role="collapsible" data-content-theme="false">
+   <h1> Contaminación 4</h1>
+   <h1>CONTAMINACIÓN QUIMICA</h1>
+   <img src="imagenes/quimi.jpg">
+   <p>refiere a cualquiera de las comentadas en los apartados anteriores, en las que un determinado compuesto químico se introduce en el medio.</p>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+   <h1> Contaminación 5</h1>
+   <h1>CONTAMINACIÓN RADIACTIVA</h1>
+   <img src="imagenes/radia.jpg" width="256" height="190">
+   <p>es aquella derivada de la dispersión de materiales radiactivos, como el uranio enriquecido, usados en instalaciones médicas o de investigación, reactores nucleares de centrales energéticas, munición blindada con metal aleado con uranio, submarinos, satélites artificiales, etc., y que se produce por un accidente (como el accidente de Chernóbil), por el uso ó por la disposición final deliberada de los residuos radiactivos.</p>
+    </div>
+     <div data-role="collapsible" data-content-theme="false">
+   <h1> Contaminación 6</h1>
+   <h1>CONTAMINACIÓN VISUAL</h1>
+   <img src="imagenes/visual.jpg">
+   <p>se produce por instalaciones industriales; Exceso de avisos publicitarios e informativos.
+     Luces y colores intensos
+     Cambios del paisaje natural por actividades humanas (campamentos petroleros, campamentos mineros, crecimiento de las ciudades, etc.).</p>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+   <h1> Contaminación 7</h1>
+   <h1>CONTAMINACIÓN SONORA</h1>
+   <img src="imagenes/sonora.jpg">
+   <p>Consiste en los ruidos molestos provocados por los seres humanos que afectan la tranquilidad y salud de todos los seres vivos.</p>
+    </div>
+    </div>
+   </div>
+ 
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>CALENTAMIENTO GLOBAL</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1> Consecuencia 1</h1>
+   <h1>PARA LAS PERSONAS</h1>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/person.jpg',1)"><img src="imagenes/personaa.jpg" width="258" height="195" id="Image20"></a>
+   <p>Problemas de salud, en personas pobres, sin acceso al agua potable o que se calientan con estufas de combustión de leña y carbón, lo que repercute negativamente en la salud de estas
+   comunidades.</p>
+   </div>
+   <div data-role="collapsible" data-content-theme="false">
+   <h1> Consecuencia 2</h1>
+   <h1>CAMBIO CLIMATICO</h1>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/sequia.jpg',1)"><img src="imagenes/seq.jpg" width="305" height="165" id="Image21"></a>
+<p>La temperatura está subiendo y el cambio climático ya está aquí, con consecuencias dramáticas para las personas, aumentando la violencia de fenómenos meteorológicos como los huracanes, la sequía.</p>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+   <h1> Consecuencia 3</h1>
+   <h1>EL SUELO</h1>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image50','','imagenes/sue.jpg',1)"><img src="imagenes/suel45.jpg" width="276" height="183" id="Image50"></a>
+<p>la contaminación de los suelos hace que la siembra sea imposible, lo que tiene un doble efecto, hay escasez de alimentos, y por la otra el clima se ve afectado debido a la ausencia de planta   </p>
+   </div>
+   <div data-role="collapsible" data-content-theme="false">
+   <h1> Contaminacion 4</h1>
+   <h1>FLORA Y FAUNA</h1>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','imagenes/animal.jpg',1)"><img src="imagenes/flora.jpg" width="275" height="184" id="Image28"></a>
+<p>Las plantas ven como la polución afecta su crecimiento, y muchas especies no han podido adaptarse a la escasez de lluvias, la contaminación del aire o el agua, etc., lo que ha supuesto su desaparición y la aceleración de la desertificación. En cuanto a los animales, muchas especies terrestres han visto alterado su hábitat por culpa de la contaminación ambiental, han perdido sus fuentes de alimentos.</p>
+    </div>
+    </div>
+   </div>
+
+     <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>REGLA DE LAS TRES ERRES (3R)</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+        <h2>Que son las reglas de las  Tres Erres</h2>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image60','','imagenes/redu.jpg',1)"><img src="imagenes/erre.jpg" width="213" height="237" id="Image60"></a> 
+      </div>
+      <p>La regla de las tres erres, también conocida como las tres erres de la ecología o simplemente 3R:</p>
+      <p> REDUCIR.-Si reducimos el problema, disminuimos el impacto en el medio ambiente. Los problemas de concienciación, habría que solucionarlos empezando por esta erre. La reducción puede realizarse en 2 niveles: reducción del consumo de bienes o de energía</p>
+      <p>REUTILIZAR.- Ésta se basa en reutilizar un objeto para darle una segunda vida útil. Todos los materiales o bienes pueden tener más de una vida útil, bien sea reparándolos para un mismo uso o con imaginación para un uso diferente.</p>
+       <p>RECICLAR.-Ésta es una de las erres más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y briks, sobre todo), pero no biodegradables. De esta forma se necesita el empleo en mayor forma personal y energía en el proceso.</p>
+    </div>
+    </div>
+     <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>Aplicacion tres, RPAS</h4>
+    </div>
+    </div>
+    </div>
+
+    <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>MEDIDAS PREVENTIVAS</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    <p>- Evitar la erosión ocasionada por el agua, el aire o el mismo hombre.</p>
+      <p>- Evitar la práctica del monocultivo, que consiste en sembrar siempre en el mismo suelo, el mismo vegetal.</p>
+      <p>- Evitar el sobre pastoreo, es conveniente llevar los animales de un lugar a otro, con la finalidad que el pasto vuelva a crecer.</p>
+      <p>- Construir terrazas y sembrar en contorno, cuando se siembra sobre terrenos inclinados.</p>
+      <p>- Sembrar árboles que sirvan de rompevientos para que disminuyan el impulso del viento y no destruya los sembradíos.</p>
+      <p>- Evitar la tala y la quema descontrolada por sus efectos para la erosión y la eliminación de microorganismos.</p>
+      <p>- Enriquecer el suelo añadiendo abonos que sustituyan los elementos nutritivos que han tomado los vegetales.</p>
+   <a href="http://laspaginasverdes.com" target="_self"><img src="imagenes/pagina.png" width="225" height="225" alt="pagina"></a> </div>
+   </div>
+  
+<div data-role="footer" data-theme="b" data-position="fixed">
+    <h4>Aplicacion tres, RPAS</h4>
+    </div>
+    </div>
+    </div>
+     <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>CONTAMINACIÓN EN MI ENTORNO</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+        <h2>PROPUESTAS PARA COMBATIR LA CONTAMINACIÓN</h2>
+      </div>
+    </div>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/barranca.png" alt="barranca" title="barranca" id="wows1_0"/></li>
+		<li><img src="data1/images/barranca23.png" alt="barranca23" title="barranca23" id="wows1_1"/></li>
+		<li><img src="data1/images/fuego.png" alt="fuego" title="fuego" id="wows1_2"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/terreno.png" alt="http://wowslider.com/" title="terreno" id="wows1_3"/></a></li>
+		<li><img src="data1/images/fabrica.png" alt="fabrica" title="fabrica" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="barranca"><span><img src="data1/tooltips/barranca.png" alt="barranca"/>1</span></a>
+		<a href="#" title="barranca23"><span><img src="data1/tooltips/barranca23.png" alt="barranca23"/>2</span></a>
+		<a href="#" title="fuego"><span><img src="data1/tooltips/fuego.png" alt="fuego"/>3</span></a>
+		<a href="#" title="terreno"><span><img src="data1/tooltips/terreno.png" alt="terreno"/>4</span></a>
+		<a href="#" title="fabrica"><span><img src="data1/tooltips/fabrica.png" alt="fabrica"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+          <p>°Multar a la gente que tira basura en las calles</p>
+          <p>°Dar platicas sobre el daño que hacen</p>
+          <p>°Eviatar el consumo excesisvo del agua</p>
+          <p>°Separar la basura</p>
+          <p>°Reutilizar las bolsas de plasticos y botellas</p>
+          <p>°Usar menos el automovil</p>
+     <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>Aplicacion tres, RPAS</h4>
+    </div>
+    </div>
+    </div>
+    
+
+</head>
+
+<body>
+</body>
+</html>
